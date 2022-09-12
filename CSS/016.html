@@ -8,10 +8,13 @@
         <style>
             div {
                 border: 10px black solid;
-                padding: 0px;
+                padding: 10px;
+                /* box-sizing: border-box가 없을 경우 content의 영역만을 의미합니다. */
                 width: 100px;
                 height: 100px;
-                box-sizing: border-box;
+                /* border 기준으로 width와 height를 잡습니다. */
+                /* box-sizing: border-box; */
+                margin: 10px;
             }
         </style>
     </head>
