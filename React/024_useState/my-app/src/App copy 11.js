@@ -23,28 +23,23 @@ const productList = {
   ],
 };
 
-// function solution(productList){
-//   let result = []
-//   for (const item of productList) {
-//     result.push(
-      // <section key={item.id}>
-      //   <h2>{item.id.toString()[2]} {item.title}</h2>
-      //   <p>{item.price}원</p>
-      // </section>
-//     )
-//   }
-//   return result
-// }
+function solution(productList){
+  let result = []
+  for (const item of productList) {
+    result.push(
+      <section key={item.id}>
+        <h2>{item.title}</h2>
+        <p>{item.price}원</p>
+      </section>
+    )
+  }
+  return result
+}
 
 export default function App() {
   return (
     <div>
-      {productList.products.map((v, i) =>
-        <section key={v.id}>
-          <h2>{i+1} {v.title}!</h2>
-          <p>{v.price}원</p>
-        </section>
-      )}
+      {solution(productList.products)}
     </div>
   )
 }
