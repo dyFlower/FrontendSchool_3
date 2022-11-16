@@ -1,7 +1,7 @@
 import React from 'react'
 // import './one.css'
 // import './one.module.css'
-import styles from './one.module.css'
+import styles from './One.module.css'
 
 export default function One () {
   return (
